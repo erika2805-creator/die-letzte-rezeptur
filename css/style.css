@@ -1,0 +1,37 @@
+body {
+	background-color: #fff5f7;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+section {
+	margin: 40px auto;
+	max-width: 600px;
+}
+
+.rezeptur {
+	background-color: white;
+	padding: 30px;
+	border-radius: 20px; 
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button{
+	background-color: #d96c8a;
+	color: white;
+	border: none; 
+	padding: 12px 24px; 
+	border-radius: 12px
+	font-size: 1rem; 
+	cursor: pointer;
+	transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+	transform: scale(1.05);
+	background-color: #c95776;
+}
