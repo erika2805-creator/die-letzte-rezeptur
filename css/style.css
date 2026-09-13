@@ -25,7 +25,7 @@ button{
 	color: white;
 	border: none; 
 	padding: 12px 24px; 
-	border-radius: 12px
+	border-radius: 12px;
 	font-size: 1rem; 
 	cursor: pointer;
 	transition: transform 0.2s ease, background-color 0.2s ease;
@@ -34,4 +34,31 @@ button{
 button:hover {
 	transform: scale(1.05);
 	background-color: #c95776;
+}
+
+#message {
+	margin-top: 20px;
+	font-size: 1.1rem;
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #f3dce3;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #d96c8a;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+#next-button {
+	display: none;
+	margin-top: 20px;
 }
