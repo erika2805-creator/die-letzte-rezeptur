@@ -75,3 +75,19 @@ analyseButton.addEventListener("click", function() {
                 analyseErgebnis.textContent = "💗 Fachinformation: Dieser Wirkstoff darf ausschließlich mit ganz viel Liebe angewendet werden. Eine Überdosierung ist ausdrücklich erwünscht.";
         }, 5500);
 });
+
+
+const pruefungen = document.querySelectorAll(".pruefung");
+const pruefungsMessage = document.querySelector("#pruefungs-message");
+
+pruefungen.forEach(function(pruefung) {
+
+	pruefung.addEventListener("click", function() {
+
+		const message = pruefung.dataset.message;
+
+		pruefungsMessage.textContent = message;
+
+	});
+
+});

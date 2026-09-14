@@ -84,3 +84,47 @@ button:hover {
 	font-size: 1.1rem;
 	font-weight: bold; 
 }
+
+#pruefungsarchiv {
+	margin-top: 60px;
+}
+
+.pruefung {
+	background-color: white;
+	padding: 20px; 
+	margin: 15px auto; 
+	max-width: 500px;
+	border-radius: 16px; 
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pruefung:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 7px 18px regba(0, 0, 0, 0.12);
+}
+
+.pruefung h3 {
+	margin: 0;
+}
+
+.pruefung p {
+	margin-bottom: 0;
+}
+
+#pruefungs-message {
+	margin-top: 25px;
+	font-size: 1.1rem; 
+	font-weight: bold; 
+	min-height: 1.5em;
+}
+
+.gesperrt {
+	opacity: 0.6; 
+	cursor: not-allowed; 
+}
+
+.gesperrt:hover {
+	transform: none;
+}
