@@ -1,7 +1,12 @@
+console.log("NEUE MAIN.JS GELADEN");
 const button = document.querySelector("#start-button");
 const message = document.querySelector("#message");
 const progressBar = document.querySelector("#progress-bar");
 const nextButton = document.querySelector("#next-button");
+const wirkstoffStation = document.querySelector("#wirkstoff-station");
+
+const analyseButton = document.querySelector("#analyse-button");
+const analyseErgebnis = document.querySelector("#analyse-ergebnis");
 
 let started = false;
 
@@ -43,4 +48,30 @@ button.addEventListener("click", function() {
 
 nextButton.addEventListener("click", function() {
 	message.textContent = "Station 2 wird vorbereitet ... 🧪 ";
+
+	wirkstoffStation.style.display = "block";
+});
+
+analyseButton.addEventListener("click", function() {
+	analyseErgebnis.textContent = "🧪 Analyse läuft ...";
+
+	setTimeout(function() {
+		analyseErgebnis.textContent = "✓ Wirkstoff identifiziert";
+	}, 1000);
+
+	setTimeout(function() {
+                analyseErgebnis.textContent = "✓  Außergewöhnlich hohe Wirksamkeit";
+        }, 2000);
+
+	setTimeout(function() {
+                analyseErgebnis.textContent = "✓ Langzeitwirkung bestätigt";
+        }, 3000);
+
+	setTimeout(function() {
+                analyseErgebnis.textContent = "⚠️  Suchtpotenzial: kritisch";
+        }, 4000);
+
+	setTimeout(function() {
+                analyseErgebnis.textContent = "💗 Fachinformation: Dieser Wirkstoff darf ausschließlich mit ganz viel Liebe angewendet werden. Eine Überdosierung ist ausdrücklich erwünscht.";
+        }, 5500);
 });
