@@ -1,5 +1,5 @@
 body {
-	background-color: #fff5f7;
+	background-color: #d0f2d9;
 	font-family: Arial, sans-serif;
 	text-align: center;
 }
@@ -14,14 +14,14 @@ section {
 }
 
 .rezeptur {
-	background-color: white;
+	background-color: #f6a6b2;
 	padding: 30px;
 	border-radius: 20px; 
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 button{
-	background-color: #d96c8a;
+	background-color: #64a45b;
 	color: white;
 	border: none; 
 	padding: 12px 24px; 
@@ -33,7 +33,7 @@ button{
 
 button:hover {
 	transform: scale(1.05);
-	background-color: #c95776;
+	background-color: #52854a;
 }
 
 #message {
@@ -44,7 +44,7 @@ button:hover {
 .progress-container {
     width: 100%;
     height: 20px;
-    background-color: #f3dce3;
+    background-color: #f0f6ef;
     border-radius: 10px;
     margin-top: 20px;
     overflow: hidden;
@@ -53,7 +53,7 @@ button:hover {
 #progress-bar {
     width: 0%;
     height: 100%;
-    background-color: #d96c8a;
+    background-color: #64a45b;
     border-radius: 10px;
     transition: width 0.5s ease;
 }
@@ -127,4 +127,90 @@ button:hover {
 
 .gesperrt:hover {
 	transform: none;
+}
+
+#survival {
+        margin-top: 60px;
+}
+
+.ressourcen {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin: 25px auto;
+}
+
+.ressource {
+        background-color: white;
+        padding: 15px;
+        border-radius: 16px;
+        width: 110px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ressource h3 {
+        font-size: 1rem;
+        margin-top: 0;
+}
+
+.ressource p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0;
+}
+
+.aktionen {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 25px;
+}
+
+#survival-message {
+        margin-top: 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        min-height: 1.5em;
+}
+
+#letzte-pruefung {
+	display: none;
+	margin-top: 60px;
+}
+
+.frage {
+	background-color: white;
+	padding: 30px;
+	margin: 25px auto;
+	max-width: 550px;
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.frage h3 {
+	margin-top: 0;
+}
+
+.antwort {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+}
+
+#pruefungs-ergebnis {
+	margin-top: 20px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	min-height: 1.5em;
+}
+
+#frage-nummer {
+	font-weight: bold;
+	margin-top: 25px;
+}
+
+.antwort:hover {
+	transform: scale(1.02);
 }
