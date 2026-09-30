@@ -214,3 +214,45 @@ button:hover {
 .antwort:hover {
 	transform: scale(1.02);
 }
+
+#finalbild {
+	display: none;
+	width: 350px; 
+	max-width: 90%;
+	margin: 30px auto;
+	border-radius: 20px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+#finalnachricht{
+	display: none; 
+	max-width: 550px;
+	margin: 25px auto;
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.6; 
+}
+#letzte-station-button {
+	display: none;
+	margin-top: 25px; 
+}
+
+#letzte-station {
+	display: none;
+	margin-top: 50px;
+}
+
+#persoenliches-foto {
+	width: 400px; 
+	max-width: 90%; 
+	border-radius: 20px; 
+	box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+	margin: 25px auto;
+}
+
+#persoenliche-nachricht {
+	max-width: 550px;
+	margin: 25px auto; 
+	font-size: 1.2rem; 
+	line-height: 1.7;
+}

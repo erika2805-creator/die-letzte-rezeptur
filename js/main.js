@@ -331,6 +331,16 @@ function pruefungAbgeschlossen() {
 		button.style.display = "none";
 	});
 
+	document.querySelector("#finalbild").style.display = "block";
+	document.querySelector("#finalnachricht").style.display ="block";
+	document.querySelector("#letzte-station-button").style.display = "inline-block";
 }
 
+const letzteStationButton = document.querySelector("#letzte-station-button");
+const letzteStation = document.querySelector("#letzte-station");
+
+letzteStationButton.addEventListener("click", function() {
+	letzteStation.style.display = "block";
+	letzteStationButton.style.display = "none";
+});
 fragenAnzeigen();
