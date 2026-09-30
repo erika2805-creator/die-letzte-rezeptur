@@ -1,3 +1,18 @@
+header {
+	animation: erscheinen 1s ease;
+}
+
+@keyframes erscheinen {
+	from {
+		opacity: 0;
+		transform: translateY(-15px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 body {
 	background-color: #d0f2d9;
 	font-family: Arial, sans-serif;
@@ -248,6 +263,19 @@ button:hover {
 	border-radius: 20px; 
 	box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 	margin: 25px auto;
+	
+	animation: fotoErscheint 1s ease;
+}
+
+@keyframes fotoErscheint {
+	from {
+		opacity: 0; 
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1; 
+		transform: scale(1);
+	}
 }
 
 #persoenliche-nachricht {
